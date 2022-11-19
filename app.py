@@ -4,9 +4,9 @@ obj = testing.Testing()
 
 app = Flask(__name__)
 
-@app.route('/<query>', methods=["POST","GET"])
+@app.route('/', methods=["POST","GET"])
 def getMSG(query):
-    query = str(query)
+    query = request.args.get('query')
     #username = request.args.get('username')
     reply= obj.response(query)
     return jsonify({'query':query,
