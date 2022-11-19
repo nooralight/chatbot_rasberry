@@ -1,8 +1,7 @@
 #TechVidvan ChatBot project
 import nltk
 import random, json , pickle
-nltk.download('punkt')
-nltk.download('wordnet')
+nltk.download('punkt');nltk.download('wordnet');nltk.download('omw-1.4')
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 import numpy as np
