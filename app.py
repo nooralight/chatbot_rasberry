@@ -5,7 +5,7 @@ obj = testing.Testing()
 app = Flask(__name__)
 
 @app.route('/', methods=["POST","GET"])
-def getMSG(query):
+def getMSG():
     query = request.args.get('query')
     #username = request.args.get('username')
     reply= obj.response(query)
